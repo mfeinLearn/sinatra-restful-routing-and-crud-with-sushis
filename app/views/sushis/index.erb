@@ -1,0 +1,11 @@
+<h1>this is the model's index page.</h1>
+
+<%#= # show all the sushis: %>
+
+<% @sushis.each do |sushi| %>
+
+<%#= # give the ancher tag an attribute called href and we give it some value representing %>
+<%#= # where we want to go %>
+<h4><a href="/sushis/<%= sushi.id %>"><%= sushi.name %></a></h4>
+
+<% end %>
