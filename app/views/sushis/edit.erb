@@ -1,0 +1,9 @@
+<h3> Edit your sushi! </h3>
+<%#= patch - restful http verb change something that already exist  %>
+<form action="/sushis/<%= @sushi.id %>" method="post">
+  <input type="hidden" name="_method" value="PATCH">
+  <input type="text" name="name" value="<%= @sushi.name %>" ><br>
+  <input type="text" name="description" value="<%= @sushi.description %>" ><br>
+  $<input type="text" name="price" value="<%= @sushi.price %>" ><br>
+  <input type="submit" name="" value="Create Roll">
+</form>

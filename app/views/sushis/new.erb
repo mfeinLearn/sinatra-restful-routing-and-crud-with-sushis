@@ -1,0 +1,30 @@
+<h3> Create a new sushi roll! </h3>
+
+<%#=action - the url where we are sending this form  %>
+<%#=method - the HTTP verb that we are using to make this HTTP request when we send this form %>
+
+<%#=what are we doing?  %>
+<%#= we are creating a form that is creating a brand new resource -> sushi  %>
+
+<%#= the restful convention for creating a new resource:  %>
+<%#= post '/sushis' %>
+
+<%#= post '/sushis' %>
+<%#= the name becomes the keys in the params hash %>
+
+<%#= the name attribute becomes the key and the params hash will now have keys of  %>
+<%#= name, description, price. the value will be whatever we type in. %>
+<%#= once the user submits the form whatever value is in there will be what shows up in the params hash  %>
+
+<%#= what is happening: 1. this form is being sent to the controller  %>
+<%#= 2. the controller/weither is taking this back to the back end  %>
+<%#= the controller is taking the information from the controller and sending it back to the backend to sushi.create  %>
+
+
+
+<form action="/sushis" method="post">
+  <input type="text" name="name" value="" placeholder= "enter name"><br>
+  <input type="text" name="description" value="" placeholder= "enter description"><br>
+  <input type="text" name="price" value="" placeholder= "enter price"><br>
+  <input type="submit" name="" value="Create Roll">
+</form>
